@@ -16,7 +16,7 @@ func main() {
 
 		pLoc, err := time.LoadLocation(line) //
 		if nil != err {
-			fmt.Printf("ERR at Location %v\n", err)
+			fmt.Printf("ERR at Location: '%v'\n", err)
 			badCnt++
 		} else {
 			//fmt.Printf("ok: %s\n", pLoc)
