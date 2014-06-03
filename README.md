@@ -5,18 +5,18 @@ Iterate through tzinfo database from iana.org/time-zones and look for bogus entr
 
 ```
  $ go run ./seeplaces.go | grep ERR
-ERR at Location unknown time zone America/Godthab
-ERR at Location unknown time zone America/Santiago
-ERR at Location unknown time zone Antarctica/Palmer
-ERR at Location unknown time zone Asia/Tel_Aviv
-ERR at Location unknown time zone Asia/Jerusalem
-ERR at Location unknown time zone Asia/Gaza
-ERR at Location unknown time zone Asia/Hebron
-ERR at Location unknown time zone Chile/Continental
-ERR at Location unknown time zone Chile/EasterIsland
-ERR at Location unknown time zone Israel
-ERR at Location unknown time zone Pacific/Fiji
-ERR at Location unknown time zone Pacific/Easter
+ERR at Location: 'unknown time zone America/Godthab'
+ERR at Location: 'unknown time zone America/Santiago'
+ERR at Location: 'unknown time zone Antarctica/Palmer'
+ERR at Location: 'unknown time zone Asia/Tel_Aviv'
+ERR at Location: 'unknown time zone Asia/Jerusalem'
+ERR at Location: 'unknown time zone Asia/Gaza'
+ERR at Location: 'unknown time zone Asia/Hebron'
+ERR at Location: 'unknown time zone Chile/Continental'
+ERR at Location: 'unknown time zone Chile/EasterIsland'
+ERR at Location: 'unknown time zone Israel'
+ERR at Location: 'unknown time zone Pacific/Fiji'
+ERR at Location: 'unknown time zone Pacific/Easter'
 ```
 The small script makenamelist.sh does most of the work of making the list of places.
 
